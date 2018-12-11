@@ -21,12 +21,12 @@ class FrequencyCounter
         do
           for line in file.lines() do
             counter=counter+this.parse_int(consume line)?
-
           end
         end
       else
         env.out.print("Couldn't find file: "+path)
       end
+
   fun get_final_frequency():I32=>
      counter
 
